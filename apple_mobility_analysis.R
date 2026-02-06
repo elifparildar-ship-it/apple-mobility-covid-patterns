@@ -1,26 +1,13 @@
-#### 0. LOAD REQUIRED PACKAGES 
-# Core data wrangling & dates 
-library(tidyverse)
-library(lubridate)
+# Apple Mobility Trends (COVID-19)
+# Main analysis script
+# Raw data files are not included in this public repository
 
-# Interactive plots 
-library(plotly)
 
-# GIS mapping
-library(leaflet)
-library(rnaturalearth)
-library(rnaturalearthdata)
-library(sf)
+# Raw Apple Mobility CSV files are not included in this public repository.
+# Please download Apple Mobility Trends data and place the files in a local folder.
+# Example:
+# mob1 <- read_csv("applemobilitytrends-2021-10-10.csv")
 
-# Network analysis
-library(igraph)
-library(visNetwork)
-
-#### 1. IMPORT AND COMBINE APPLE MOBILITY DATA
-mob1 <- read_csv("/Users/elifparildar/Downloads/AppleMobilityData/applemobilitytrends-2021-09-05.csv")
-mob2 <- read_csv("/Users/elifparildar/Downloads/AppleMobilityData/applemobilitytrends-2021-09-18.csv")
-mob3 <- read_csv("/Users/elifparildar/Downloads/AppleMobilityData/applemobilitytrends-2021-09-25.csv")
-mob4 <- read_csv("/Users/elifparildar/Downloads/AppleMobilityData/applemobilitytrends-2021-10-10.csv")
 
 # Stack all CVSs into one dataset 
 mobility_raw <- bind_rows(mob1, mob2, mob3, mob4)
