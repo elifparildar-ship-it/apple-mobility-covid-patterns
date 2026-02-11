@@ -26,3 +26,7 @@ Raw data files are not included in this repository; the analysis script document
 
 ## Files
 - `apple_mobility_analysis.R`: main analysis script
+
+### Course Context
+This project was developed as part of the *Computational Social Science* course (IR421).  
+The analysis builds on course materials and methodological guidance provided during the course, and was independently re-implemented, adapted, and extended by the author to explore mobility patterns using real-world data.
